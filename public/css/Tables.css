@@ -1,0 +1,26 @@
+table#userFormTable td{
+    height: 50px;
+}
+
+table.shownTables {
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 5px;
+    background: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+}
+
+table.shownTables th {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 12px 10px;
+    border-bottom: 2px solid #F56433;
+    color: black;
+}
+
+table.shownTables td{
+    padding: 10px;
+    color: black;
+}

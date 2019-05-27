@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Список пользователей</title>
+    <link rel="stylesheet" href="/public/css/Common.css">
+    <link rel="stylesheet" href="/public/css/Elements.css">
+    <link rel="stylesheet" href="/public/css/Tables.css">
+</head>
+<body>
+
+<header>
+    <% include fragments/header.ejs%>
+</header>
+<a href="/">На главную</a>
+<center>
+<h3>Список пользователей</h3>
+</center>
+<aside>
+    <%- person_table %>
+    <div id="login_form" hidden="hidden">
+        <% include forms/login_form.ejs%>
+    </div>
+
+    <div id="add_person_form">
+        <% include forms/person_form.ejs%>
+    </div>
+</aside>
+
+
+    <% include fragments/error.ejs%>
+<footer>
+    <% include fragments/footer.ejs%>
+</footer>
+
+<script type="text/javascript" src="/public/js/jquery-3.4.1.min.js"></script>
+
+<script type="text/javascript" src="/public/js/welcome_page.js"></script>
+<script type="text/javascript" src="/public/js/modal_window.js"></script>
+<script type="text/javascript" src="/public/js/valid_person.js"></script>
+<script type="text/javascript" src="/public/js/modal_error.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+
+        <div class="modal-form" id="personForm">
+            <div class="modal-header">
+                <h3 class="modal-title">Добавить пользователя</h3>
+            </div>
+            <div class="modal-body">
+                <form id="person_form">
+                    <input type="hidden" id="PersonId" name="id">
+                    <table id="userFormTable">
+                        <tr>
+                            <td>
+                                <label for="name" class="col-form-label">Имя пользователя</label>
+                            </td>
+                            <td>
+                                <input type="text" class="field" id="name" name="name" placeholder="Имя пользователя">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="email" class="col-form-label">E-mail</label>
+                            </td>
+                            <td>
+                                <input type="text" class="field" id="email" name="email" placeholder="E-mail">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="password" class="col-form-label">Введите пароль</label>
+
+                            </td>
+                            <td>
+                                <input type="password" class="field" id="password" name="password" placeholder="Введите пароль">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="repassword" class="col-form-label">Повторите пароль</label>
+                            </td>
+                            <td>
+                                <input type="password" class="field" id="repassword" name="repassword" placeholder="Повторите пароль">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                <div id="execute">
+                    <button type="button" id="addPerson">Сохранить</button>
+                </div>
+            </div>
+        </div>
+

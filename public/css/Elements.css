@@ -1,0 +1,133 @@
+div#registry_button{
+    background: gray;
+    width: 130px;
+    display: inline-block;
+    float: right;
+    margin-top: -29px;
+    margin-right: 20px;
+    padding: 3px 3px 3px 3px;;
+    text-align: center;
+    font-size: 80%;
+    cursor: pointer;
+    border: solid 2px #ffa544;
+}
+
+div#inlet_button,div#logout_button{
+    background: gray;
+    width: 80px;
+    display: inline-block;
+    float: right;
+    margin-top: -29px;
+    margin-right: 150px;
+    padding: 3px 3px 3px 3px;
+    text-align: center;
+    font-size: 80%;
+    cursor: pointer;
+    border: solid 2px #ffa544;
+}
+
+#login_b{
+    height: 40px;
+    background-color: gray;
+    color: #f4f421;
+    font-size: 102%;
+    cursor: pointer;
+    width: 230px;
+    border: solid 2px #ffa544;
+}
+
+#addPerson{
+    width: 200px;
+    height: 33px;
+    margin-left: 90px;
+    border: solid 2px #ffa544;
+}
+
+div#inlet_button:hover,
+div#registry_button:hover,
+button#addPerson:hover,
+div#logout_button:hover,
+#login_b:hover{
+    background-color: #dfdfdf;
+    border: solid 2px black;
+    color: black;
+
+}
+
+div#login_form{
+    position: absolute;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+    margin-top: 25px;
+    margin-right: 130px;
+    right: 15px;
+    top: 42px;
+    box-shadow: -6px 6px 10px rgba(0,0,0,0.5);
+}
+div#login_form::after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    right: 30px;
+    bottom: 195px; /* Положение треугольника */
+    border: 20px solid transparent; /* Прозрачные границы */
+    border-bottom: 20px solid white;
+}
+td.login_field{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: Arial, serif;
+}
+.field,.selector{
+    width: 230px;
+    height: 30px;
+    font-size: 120%;
+
+}
+
+
+
+
+
+#reg_text{
+    text-align: right;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.modal-form{
+    padding: 15px 15px 15px 15px;
+}
+
+.modal-header{
+    text-align: center;
+}
+#title{
+    width: 400px;
+    text-align: center;
+    color: white;
+}
+
+#modal_close {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: block;
+    background-color: #bc2826;
+    text-align: center;
+    padding-bottom: 5px;
+    border: solid #656565;
+    color: white;
+}
+
+.h3 {
+    margin-left: auto;
+    margin-right: auto;
+}
+.modal-form {
+    background: #bdbdbd;
+    border: solid 2px #ffa544;
+}
+
