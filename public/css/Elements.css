@@ -63,6 +63,7 @@ div#login_form{
     right: 15px;
     top: 42px;
     box-shadow: -6px 6px 10px rgba(0,0,0,0.5);
+    z-index: 999999;
 }
 div#login_form::after {
     content: '';
@@ -129,5 +130,27 @@ td.login_field{
 .modal-form {
     background: #bdbdbd;
     border: solid 2px #ffa544;
+}
+
+
+#left_side{
+    background: #dfdfdf;
+    width: 280px;
+    border: solid 2px #ffa544;
+    margin-right: 10px;
+    margin-top: 20px;
+    position: absolute;
+    float: right;
+    text-align: center;
+    right: 15px;
+    top: 42px;
+    box-shadow: -6px 6px 10px rgba(0,0,0,0.5);
+
+}
+
+#text{
+    float: left;
+    margin: 25px 370px 25px 25px;
+    text-align: justify;
 }
 

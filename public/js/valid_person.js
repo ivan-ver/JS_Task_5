@@ -7,7 +7,7 @@ $('#addPerson').click(function () {
         data: data,
     });
     modal.close();
-
+    updateTable()
 });
 
 

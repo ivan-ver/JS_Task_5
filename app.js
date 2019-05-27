@@ -48,8 +48,12 @@ app.get('/',function (req, res) {
 });
 
 app.get('/all_persons',function (req, res) {
+    res.render('persons_list')
+});
+
+app.get('/get_all_persons',function (req, res) {
     client.query('SELECT name, email FROM persons;', [], function (err, result) {
-        res.render('persons_list', {person_table: renderTable(result.rows)});
+        res.send (result.rows);
     });
 });
 
@@ -63,7 +67,7 @@ app.get('/logout', function(req, res){
 });
 
 app.post('/save_person', urlencodedParser,function (req, res) {
-    client.query("INSERT INTO users(name, email, password) " +
+    client.query("INSERT INTO persons(name, email, password) " +
         "values('"+req.body.name +"','" + req.body.email+"','" + crypto.createHash('md5').update(req.body.password).digest("hex")+"')");
 });
 
@@ -91,12 +95,12 @@ app.post('/login', function(req, res, next) {
     })(req, res, next);
 });
 
-function renderTable(data) {
-    let result = '<table id="person_table" class="shownTables">'+
-        '<thead><tr><th>Имя</th><th>E-mail</th></tr></thead>';
-    data.forEach(function (i) {
-        result += '<tr><td>'+i['name']+'</td><td>'+i['email']+'</td></tr>'
-    });
-    result += '</table>';
-    return result;
-}
+// function renderTable(data) {
+//     let result = '<table id="person_table" class="shownTables">'+
+//         '<thead><tr><th>Имя</th><th>E-mail</th></tr></thead>';
+//     data.forEach(function (i) {
+//         result += '<tr><td>'+i['name']+'</td><td>'+i['email']+'</td></tr>'
+//     });
+//     result += '</table>';
+//     return result;
+// }

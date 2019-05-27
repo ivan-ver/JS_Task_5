@@ -39,14 +39,11 @@ $(document).mouseup(function (e) {
 
 $('#formLogin').submit(function (e) {
     e.preventDefault();
-
     $.ajax({
         url: '/login',
         type: 'POST',
         data: $('#formLogin').serialize(),
     }).done(function (data) {
-
-
         if (data['error']){
             modal_error.open({
                 content: $errorModal,
@@ -55,8 +52,6 @@ $('#formLogin').submit(function (e) {
         } else {
             window.location.replace(data['url'])
         }
-
-        // window.location.replace('/personPage')
     });
 });
 
